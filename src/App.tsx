@@ -1,3 +1,4 @@
+import { Authenticated, Unauthenticated } from "convex/react";
 import { Content } from "./components/Content";
 import Header from "./components/Header";
 import { Toaster } from "./components/ui/toaster";
@@ -5,7 +6,9 @@ import { Toaster } from "./components/ui/toaster";
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header />
+      <Authenticated>
+        <Header />
+      </Authenticated>
       <main className="flex-1 container mx-auto px-4 py-8">
         <Content />
       </main>

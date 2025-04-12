@@ -20,7 +20,7 @@ export function Content() {
   return (
     <div className="flex flex-col gap-8">
       <div className="text-center max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-800 mb-6">
+        <h1 className="text-3xl font-bold text-gray-800 mb-6 mt-12">
           Fresh from Local Vendors
         </h1>
         <Authenticated>
